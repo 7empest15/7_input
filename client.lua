@@ -42,10 +42,4 @@ function CloseKeyboardInput()
 end
 
 
-RegisterCommand('testInput', function()
-    local text = OpenKeyboardInput('Test Input', 'Default Text', 30, false)
-    print(text)
-end, false)
-
-
 exports('OpenKeyboardInput', OpenKeyboardInput)
