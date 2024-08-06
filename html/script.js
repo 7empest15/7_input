@@ -6,7 +6,6 @@ let title = document.getElementsByClassName('popup-title')[0]
 
 window.addEventListener('message', (event) => {
     let data = event.data
-    console.log('Message received: ' + data)
 
     if (data.type === 'show') {
 
@@ -14,6 +13,11 @@ window.addEventListener('message', (event) => {
         input.focus()
         title.innerText = data.title || ''
         input.value = data.value || ''
+        if ( data.isPassword ) {
+            input.type = 'password'
+        } else {
+            input.type = 'text'
+        }
 
     } else if (data.type === 'hide') {
 
