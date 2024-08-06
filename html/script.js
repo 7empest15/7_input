@@ -1,5 +1,3 @@
-console.log('Hello from script.js!')
-
 let popup = document.getElementsByClassName('popup')[0]
 let input = document.getElementsByClassName('popup-input')[0]
 let title = document.getElementsByClassName('popup-title')[0]
