@@ -11,7 +11,4 @@ To open a new input dialog, there is an unique export :
 
 This export return the entered value. 
 
-
-( Note : The isPassword feature is not yet implemented )
-
 ![alt text](image.png)
